@@ -17,6 +17,7 @@ public class Card {
         imageView = place;
         imageViewID = Integer.parseInt(imageID);
         cardID = card;
+        winner = true;
     }
 
     //getters and setters
@@ -41,13 +42,13 @@ public class Card {
         return cardID;
     }
 
+    public boolean getWinner() {
+        return winner;
+    }
+
     public void setCard(String cardID) {
         this.cardID = cardID;
     }
-
-
-
-
 
 }
 
